@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title">Design System</h1>
+            <p class="sidebar-subtitle">Documentation</p>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#tokens" class="nav-link active" data-page="tokens">
+                <span class="nav-icon">🎨</span>
+                <span>Design Tokens</span>
+            </a>
+            <a href="#colors" class="nav-link" data-page="colors">
+                <span class="nav-icon">🌈</span>
+                <span>Colors</span>
+            </a>
+            <a href="#typography" class="nav-link" data-page="typography">
+                <span class="nav-icon">📝</span>
+                <span>Typography</span>
+            </a>
+            <a href="#components" class="nav-link" data-page="components">
+                <span class="nav-icon">🧩</span>
+                <span>Components</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Design Tokens Page -->
+        <section id="tokens" class="page active">
+            <header class="page-header">
+                <h1>Design Tokens</h1>
+                <p class="page-description">All design tokens from our design system with copy functionality</p>
+            </header>
+            <div id="tokens-content" class="tokens-grid">
+                <!-- Tokens will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Colors Page -->
+        <section id="colors" class="page">
+            <header class="page-header">
+                <h1>Color Library</h1>
+                <p class="page-description">Complete color palettes with hexadecimal codes</p>
+            </header>
+            <div id="colors-content">
+                <!-- Colors will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Typography Page -->
+        <section id="typography" class="page">
+            <header class="page-header">
+                <h1>Typography</h1>
+                <p class="page-description">Font families, weights, and size scales</p>
+            </header>
+            <div class="typography-content">
+                <div class="typography-section">
+                    <h2>Font Families</h2>
+                    <div class="font-showcase">
+                        <div class="font-card">
+                            <h3 class="font-name">Diagramm</h3>
+                            <p class="font-usage">Headings</p>
+                            <div class="font-sample" style="font-family: 'Diagramm', sans-serif; font-weight: 300;">
+                                <p style="font-size: 48px; margin: 0;">Aa</p>
+                                <p style="font-size: 24px; margin: 8px 0 0;">The quick brown fox jumps over the lazy dog</p>
+                            </div>
+                        </div>
+                        <div class="font-card">
+                            <h3 class="font-name">Roboto</h3>
+                            <p class="font-usage">Body Text</p>
+                            <div class="font-sample" style="font-family: 'Roboto', sans-serif;">
+                                <p style="font-size: 48px; margin: 0;">Aa</p>
+                                <p style="font-size: 24px; margin: 8px 0 0;">The quick brown fox jumps over the lazy dog</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="typography-section">
+                    <h2>Font Weights</h2>
+                    <div class="weights-grid">
+                        <div class="weight-item" style="font-weight: 300;">
+                            <span class="weight-label">Light (300)</span>
+                            <p class="weight-sample">The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div class="weight-item" style="font-weight: 400;">
+                            <span class="weight-label">Regular (400)</span>
+                            <p class="weight-sample">The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div class="weight-item" style="font-weight: 500;">
+                            <span class="weight-label">Medium (500)</span>
+                            <p class="weight-sample">The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div class="weight-item" style="font-weight: 700;">
+                            <span class="weight-label">Bold (700)</span>
+                            <p class="weight-sample">The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="typography-section">
+                    <h2>Size Scale</h2>
+                    <div id="size-scale" class="size-scale">
+                        <!-- Size scale will be dynamically loaded -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Page -->
+        <section id="components" class="page">
+            <header class="page-header">
+                <h1>Components</h1>
+                <p class="page-description">SaaS component library built with our design system</p>
+            </header>
+            <div class="components-content">
+                <!-- Buttons -->
+                <div class="component-section">
+                    <h2>Buttons</h2>
+                    <div class="component-showcase">
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-secondary">Secondary Button</button>
+                        <button class="btn btn-outline">Outline Button</button>
+                        <button class="btn btn-primary" disabled>Disabled Button</button>
+                        <button class="btn btn-danger">Danger Button</button>
+                        <button class="btn btn-success">Success Button</button>
+                    </div>
+                </div>
+
+                <!-- Input Fields -->
+                <div class="component-section">
+                    <h2>Input Fields</h2>
+                    <div class="component-showcase">
+                        <div class="input-group">
+                            <label for="input1">Text Input</label>
+                            <input type="text" id="input1" class="input" placeholder="Enter text...">
+                        </div>
+                        <div class="input-group">
+                            <label for="input2">Email Input</label>
+                            <input type="email" id="input2" class="input" placeholder="email@example.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="input3">Password Input</label>
+                            <input type="password" id="input3" class="input" placeholder="••••••••">
+                        </div>
+                        <div class="input-group">
+                            <label for="textarea1">Textarea</label>
+                            <textarea id="textarea1" class="input" rows="4" placeholder="Enter your message..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class="component-section">
+                    <h2>Cards</h2>
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Card Title</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>This is a basic card component with header and body content. Perfect for displaying information in a structured way.</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-sm">Action</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Statistics Card</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="stat">
+                                    <span class="stat-value">1,234</span>
+                                    <span class="stat-label">Total Users</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-hover">
+                            <div class="card-header">
+                                <h3>Hover Card</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>This card has a hover effect. Try hovering over it!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerts -->
+                <div class="component-section">
+                    <h2>Alerts & Notifications</h2>
+                    <div class="component-showcase">
+                        <div class="alert alert-info">
+                            <span class="alert-icon">ℹ️</span>
+                            <div class="alert-content">
+                                <strong>Information:</strong> This is an informational alert message.
+                            </div>
+                        </div>
+                        <div class="alert alert-success">
+                            <span class="alert-icon">✓</span>
+                            <div class="alert-content">
+                                <strong>Success:</strong> Your action was completed successfully!
+                            </div>
+                        </div>
+                        <div class="alert alert-warning">
+                            <span class="alert-icon">⚠️</span>
+                            <div class="alert-content">
+                                <strong>Warning:</strong> Please review this important information.
+                            </div>
+                        </div>
+                        <div class="alert alert-error">
+                            <span class="alert-icon">✕</span>
+                            <div class="alert-content">
+                                <strong>Error:</strong> Something went wrong. Please try again.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badges -->
+                <div class="component-section">
+                    <h2>Badges</h2>
+                    <div class="component-showcase">
+                        <span class="badge badge-primary">Primary</span>
+                        <span class="badge badge-success">Success</span>
+                        <span class="badge badge-warning">Warning</span>
+                        <span class="badge badge-error">Error</span>
+                        <span class="badge badge-neutral">Neutral</span>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="component-section">
+                    <h2>Tabs</h2>
+                    <div class="tabs">
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="tab1">Overview</button>
+                            <button class="tab-btn" data-tab="tab2">Details</button>
+                            <button class="tab-btn" data-tab="tab3">Settings</button>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="tab-panel active" id="tab1">
+                                <p>This is the overview tab content. It contains general information about the item.</p>
+                            </div>
+                            <div class="tab-panel" id="tab2">
+                                <p>This is the details tab content. It provides more specific information.</p>
+                            </div>
+                            <div class="tab-panel" id="tab3">
+                                <p>This is the settings tab content. Configure your preferences here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="component-section">
+                    <h2>Data Table</h2>
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>john@example.com</td>
+                                    <td>Admin</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline">Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Smith</td>
+                                    <td>jane@example.com</td>
+                                    <td>User</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline">Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bob Johnson</td>
+                                    <td>bob@example.com</td>
+                                    <td>User</td>
+                                    <td><span class="badge badge-neutral">Inactive</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline">Edit</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="component-section">
+                    <h2>Modal</h2>
+                    <button class="btn btn-primary" id="openModal">Open Modal</button>
+                    <div class="modal" id="exampleModal">
+                        <div class="modal-overlay"></div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Modal Title</h3>
+                                <button class="modal-close" id="closeModal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This is a modal dialog. It can contain any content you need, including forms, images, or text.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" id="cancelModal">Cancel</button>
+                                <button class="btn btn-primary">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown -->
+                <div class="component-section">
+                    <h2>Dropdown</h2>
+                    <div class="dropdown">
+                        <button class="btn btn-outline dropdown-toggle" id="dropdownBtn">
+                            Select Option
+                            <span class="dropdown-arrow">▼</span>
+                        </button>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <a href="#" class="dropdown-item">Option 1</a>
+                            <a href="#" class="dropdown-item">Option 2</a>
+                            <a href="#" class="dropdown-item">Option 3</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Separated Option</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="component-section">
+                    <h2>Progress Bars</h2>
+                    <div class="component-showcase">
+                        <div class="progress-group">
+                            <label>Progress: 25%</label>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <label>Progress: 50%</label>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <label>Progress: 75%</label>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <label>Progress: 100%</label>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message">Copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

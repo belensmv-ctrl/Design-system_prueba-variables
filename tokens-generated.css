@@ -1,0 +1,167 @@
+/* ========================================
+   CSS CUSTOM PROPERTIES (Design Tokens)
+   Generated from design-system-master.json
+   Using SEMANTIC tokens (Alias), not primitives
+   ======================================== */
+:root {
+
+    /* ===== PRIMITIVE COLOR TOKENS ===== */
+    /* These are the base colors - use semantic tokens in components */
+
+    /* Blue Primitive */
+    --color-blue-50: #F3F5FC;
+    --color-blue-100: #DDE4F6;
+    --color-blue-200: #BCC8ED;
+    --color-blue-300: #9AADE5;
+    --color-blue-400: #7992DC;
+    --color-blue-500: #5776D3;
+    --color-blue-600: #365BCA;
+    --color-blue-700: #2B49A2;
+    --color-blue-800: #20367A;
+    --color-blue-900: #152451;
+    --color-blue-1000: #0B1229;
+
+    /* Neutral Primitive */
+    --color-neutral-50: #FAFBFB;
+    --color-neutral-100: #F1F2F4;
+    --color-neutral-200: #E2E4E9;
+    --color-neutral-300: #D4D7DE;
+    --color-neutral-400: #C6C9D2;
+    --color-neutral-500: #B7BCC7;
+    --color-neutral-600: #A9AEBC;
+    --color-neutral-700: #81889C;
+    --color-neutral-800: #5E6578;
+    --color-neutral-900: #3F4350;
+    --color-neutral-1000: #1F2228;
+
+    /* Basic Primitive */
+    --color-basic-white: #FFFFFF;
+    --color-basic-black: #232323;
+
+    /* Success Primitive */
+    --color-success-50: #F2FDF8;
+    --color-success-100: #D7F8EA;
+    --color-success-200: #B0F1D6;
+    --color-success-300: #88EAC1;
+    --color-success-400: #60E3AD;
+    --color-success-500: #60E3AD;
+    --color-success-600: #38DC98;
+    --color-success-700: #1B9C67;
+    --color-success-800: #14754D;
+    --color-success-900: #0E4E34;
+    --color-success-1000: #07271A;
+
+    /* Warning Primitive */
+    --color-warning-50: #FFFCF1;
+    --color-warning-100: #FFF6D4;
+    --color-warning-200: #FFECAA;
+    --color-warning-300: #FFE380;
+    --color-warning-400: #FFDA55;
+    --color-warning-500: #FFD02B;
+    --color-warning-600: #FFC700;
+    --color-warning-700: #CC9F00;
+    --color-warning-800: #997700;
+    --color-warning-900: #665000;
+    --color-warning-1000: #332800;
+
+    /* Error Primitive */
+    --color-error-50: #FFF5F6;
+    --color-error-100: #FFE0E3;
+    --color-error-200: #FFC2C7;
+    --color-error-300: #FFA3AB;
+    --color-error-400: #FF858F;
+    --color-error-500: #FF6673;
+    --color-error-600: #FF2A3D;
+    --color-error-700: #EE0015;
+    --color-error-800: #B20010;
+    --color-error-900: #77000A;
+    --color-error-1000: #3B0005;
+
+    /* ===== SEMANTIC COLOR TOKENS (USE THESE IN COMPONENTS) ===== */
+
+    /* Surface - Backgrounds */
+    --color-surface-background-background: #F3F5FC;
+    --color-surface-background-primary: #DDE4F6;
+    --color-surface-background-secondary-no: #365BCA;
+
+    /* Surface - Buttons */
+    --color-surface-button-on-button: #365BCA;
+    --color-surface-button-on-button-hover: #DDE4F6;
+    --color-surface-button-on-button-disabled: #E2E4E9;
+
+    /* Text Colors */
+    --color-text-disable: #FFFFFF;
+    --color-text-heading-white: #FFFFFF;
+    --color-text-heading-black: #232323;
+    --color-text-body-white: #FFFFFF;
+    --color-text-body-black: #232323;
+    --color-text-link-default: #365BCA;
+    --color-text-link-active: #2B49A2;
+    --color-text-on-button-default: #FFFFFF;
+    --color-text-on-button-disabled: #A9AEBC;
+    --color-text-states-active: #2B49A2;
+    --color-text-states-information-default: #365BCA;
+    --color-text-states-information-dark: #2B49A2;
+    --color-text-states-information-light: #5776D3;
+    --color-text-states-warning-default: #CC9F00;
+    --color-text-states-warning-dark: #997700;
+    --color-text-states-warning-light: #FFC700;
+    --color-text-states-error-default: #EE0015;
+    --color-text-states-error-dark: #B20010;
+    --color-text-states-error-light: #FF2A3D;
+
+    /* Icons */
+    --color-icons-white: #FFFFFF;
+    --color-icons-black: #232323;
+
+    /* Borders */
+    --color-borders-white: #FAFBFB;
+    --color-borders-black: #81889C;
+
+    /* ===== SIZE TOKENS ===== */
+    --size-none: 0px;
+    --size-1: 1px;
+    --size-2: 2px;
+    --size-4: 4px;
+    --size-8: 8px;
+    --size-12: 12px;
+    --size-14: 14px;
+    --size-16: 16px;
+    --size-18: 18px;
+    --size-20: 20px;
+    --size-22: 22px;
+    --size-24: 24px;
+    --size-32: 32px;
+    --size-38: 38px;
+    --size-40: 40px;
+    --size-48: 48px;
+    --size-52: 52px;
+    --size-60: 60px;
+    --size-64: 64px;
+    --size-76: 76px;
+    --size-90: 90px;
+    --size-114: 114px;
+    --size-140: 140px;
+    --size-200: 200px;
+
+    /* ===== TYPOGRAPHY TOKENS ===== */
+
+    /* Font Families */
+    --type-family-heading: "Diagramm", -apple-system, BlinkMacSystemFont, sans-serif;
+    --type-family-body: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* ===== DERIVED VALUES ===== */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --radius-sm: var(--size-4);
+    --radius-md: var(--size-8);
+    --radius-lg: var(--size-12);
+    --radius-xl: var(--size-16);
+    --radius-full: 9999px;
+    --transition-fast: 150ms ease;
+    --transition-base: 200ms ease;
+    --transition-slow: 300ms ease;
+    --sidebar-width: 280px;
+}
